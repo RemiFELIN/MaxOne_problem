@@ -67,8 +67,8 @@ def selection(population):
 
 
 def mutation(ind):
-    randByPMUT = random.uniform(0, PMUT)
     for i in ind:
+        randByPMUT = random.uniform(0, PMUT)
         if randByPMUT <= PMUT:
             if ind[i] == 1:
                 ind[i] = 0
